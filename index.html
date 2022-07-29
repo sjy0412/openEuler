@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商业软件测试表单</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="title">
+            <span>商业软件测试信息</span>
+        </div>
+        <div class="form-box">
+            <form action="#">
+                <div class="scheme-info">
+                    <div class="small-tip">方案信息</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">方案ID</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="projectId" placeholder="请输入方案ID" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">请求ID</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="requestId" placeholder="请输入请求ID" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">方案名称</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="solutionName" placeholder="请输入方案名称" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">所属创新中心</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="testOrganization" placeholder="请输入所属创新中心" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">公司信息</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">公司名称</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="companyName" placeholder="请输入公司名称" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">公司LOGO</label>
+                            <div class="col-sm-9 input-box img-box">
+                                <img  src="#" class="img-rounded img-show" id="logoImg">
+                                <input type="file" id="companyLogo" accept="image/*" class="img-input" placeholder="请上传公司LOGO" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">用户信息</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">用户ID</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="userId" placeholder="请输入用户ID" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">用户姓名</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="userName" placeholder="请输入用户姓名" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">联系电话</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="telephone" placeholder="请输入联系电话" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">联系邮箱</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="email" placeholder="请输入联系邮箱" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">项目概述</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">项目背景</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="projectDescription" placeholder="请输入项目背景" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">产品逻辑架构图</label>
+                            <div class="col-sm-9 input-box img-box">
+                                <img  src="#" class="img-rounded img-show" id="diagramImg">
+                                <input type="file" class="img-input" accept="image/*" id="projectLogicalDiagram"
+                                    placeholder="请上传产品逻辑架构图"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">测试组网图</label>
+                            <div class="col-sm-9 input-box img-box">
+                                <img  src="#" class="img-rounded img-show" id="testNetworkImg">
+                                <input type="file" class="img-input" accept="image/*" id="testNetworkDiagram" placeholder="请上传测试组网图" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">产品信息</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">软件名称（中）</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="productName" placeholder="请输入软件名称（中）" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">软件名称（英）</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="productNameEn" placeholder="请输入软件名称（英）" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">软件版本</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="productVersion" placeholder="请输入软件版本" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">软件类型</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="productType" placeholder="请输入软件类型" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">软件属性</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="productAttribute" placeholder="请输入软件属性" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">下载地址</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="downloadUrl" placeholder="请输入下载地址" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">商业软件/开源软件</label>
+                            <div class="col-sm-9 input-box">
+                                <select class="form-control" id="openSource">
+                                    <option selected>-请选择-</option>
+                                    <option value="true">是</option>
+                                    <option value="false">否</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">开源协议（开源软件）</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="protocol" placeholder="请输入开源协议（开源软件）" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">开发语言</label>
+                            <div class="col-sm-9 input-box">
+                                <select class="form-control" id="language" multiple>
+                                    <option selected>-请选择-</option>
+                                    <option value="其他语言">其他语言</option>
+                                    <option value="C">C</option>
+                                    <option value="C++">C++</option>
+                                    <option value="JAVA">JAVA</option>
+                                    <option value="PYTHON">PYTHON</option>
+                                    <option value="GOLANG">GOLANG</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">服务器信息</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">是否已完成测试</label>
+                            <div class="col-sm-9 input-box">
+                                <select name="finishTest" class="form-control" id="finishTest">
+                                    <option selected>-请选择-</option>
+                                    <option value="true">是</option>
+                                    <option value="false">否</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">资源类型</label>
+                            <div class="col-sm-9 input-box">
+                                <select type="text" class="form-control" id="vm">
+                                    <option selected>-请选择-</option>
+                                    <option value="false">裸金属</option>
+                                    <option value="true">虚拟机</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">算力平台</label>
+                            <div class="col-sm-9 input-box">
+                                <select type="text" class="form-control" id="platform">
+                                    <option selected>-请选择-</option>
+                                    <option value="Kunpeng">Kunpeng</option>
+                                    <option value="x86">x86</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">服务器类型</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="serverType" placeholder="请输入服务器类型" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">服务器型号</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="modelType" placeholder="请输入服务器型号" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">CPU</label>
+                            <div class="col-sm-9 input-box">
+                                <select type="text" class="form-control" id="cpu">
+                                    <option selected>-请选择-</option>
+                                    <option value="2*7260(64 cores,2.6 GHz)">2*7260(64 cores,2.6 GHz)</option>
+                                    <option value="2*5250(48 cores,2.6 GHz)">2*5250(48 cores,2.6 GHz)</option>
+                                    <option value="2*5230(32 cores,2.6 GHz)">2*5230(32 cores,2.6 GHz)</option>
+                                    <option value="2*5220(32 cores,2.6 GHz)">2*5220(32 cores,2.6 GHz)</option>
+                                    <option value="2*3210(24 cores,2.6 GHz)">2*3210(24 cores,2.6 GHz)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">内存</label>
+                            <div class="col-sm-9 input-box">
+                                <select type="text" class="form-control" id="ram">
+                                    <option selected>-请选择-</option>
+                                    <option value="1GB">1GB</option>
+                                    <option value="2GB">2GB</option>
+                                    <option value="4GB">4GB</option>
+                                    <option value="8GB">8GB</option>
+                                    <option value="16GB">16GB</option>
+                                    <option value="32GB">32GB</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">硬盘</label>
+                            <div class="col-sm-9 input-box">
+                                <select type="text" class="form-control" id="disk">
+                                    <option selected>-请选择-</option>
+                                    <option value="SATA HDD">SATA HDD</option>
+                                    <option value="NVMe SSD">NVMe SSD</option>
+                                    <option value="SAS HDD">SAS HDD</option>
+                                    <option value="SATA SSD">SATA SSD</option>
+                                    <option value="SAS SSD">SAS SSD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">网卡</label>
+                            <div class="col-sm-9 input-box">
+                                <select type="text" class="form-control" id="nic">
+                                    <option selected>-请选择-</option>
+                                    <option value="4*GE">4*GE</option>
+                                    <option value="4*25GE">4*25GE</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">操作系统</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">操作系统名称</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="osName" placeholder="请输入操作系统" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">操作系统版本</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="osVersion" placeholder="请输入操作系统版本" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="scheme-info">
+                    <div class="small-tip">依赖栈信息</div>
+                    <div class="stack-box">
+                        <div style="display: flex">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 form-label">软件型号</label>
+                                <div class="col-sm-9 input-box">
+                                    <input type="text" class="form-control type" placeholder="请输入软件型号" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 form-label">软件名称</label>
+                                <div class="col-sm-9 input-box">
+                                    <input type="text" class="form-control name" placeholder="请输入软件名称" />
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex">
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 form-label">软件版本</label>
+                                <div class="col-sm-9 input-box">
+                                    <input type="text" class="form-control version" placeholder="请输入软件版本" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 form-label">厂商</label>
+                                <div class="col-sm-9 input-box">
+                                    <input type="text" class="form-control vendor" placeholder="请输入厂商" />
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex">
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 form-label">用途</label>
+                                <div class="col-sm-9 input-box">
+                                    <textarea class="form-control usage" placeholder="请输入用途"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i id="addStack" class="glyphicon glyphicon-plus-sign" onclick="addStack()">增加依赖栈信息</i>
+                </div>
+
+                <div class="scheme-info">
+                    <div class="small-tip">测试内容</div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">功能测试文档</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="file" id="functionUrl" placeholder="请上传功能测试文档" />
+                            </div>
+                        </div>
+                        <div class="form-group" id="comTest1">
+                            <label for="inputEmail3" class="col-sm-3 form-label">上传结果日志</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="file" id="resultUrl" placeholder="请上传结果日志" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: none;" id="comTest2">
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">上传安装包</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="file" id="packageUrl" placeholder="Password" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">安装包checksum</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control" id="checksum" placeholder="请输入安装包checksum" />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">应用启动进程名称</label>
+                            <div class="col-sm-9 input-box" id="processInput">
+                                <div>
+                                    <input type="text" class="processName" placeholder="请输入"
+                                        style="margin-right: 8px;" />
+                                    <i class="glyphicon glyphicon-minus-sign del" style="display: none;"
+                                        onclick="delProcessName(this)"></i>
+                                </div>
+                                <i class="glyphicon glyphicon-plus-sign" id="addProcessName"
+                                    style="display: block;cursor: pointer;" onclick="addProcessName()">新增应用启动进程名称</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="submit-btn">
+            <button type="submit" class="footer-btn btn" onclick="handleSubmit()">
+                提交
+            </button>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        const baseUrl = 'http://172.36.222.151/openEulerTest';
+        const rep = /jpeg|png|gif|bmp/ig;
+        // 增加依赖栈信息 
+        function addStack() {
+            let text = `
+            <div style="display: flex">
+                <div class="stack-box">
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">软件型号</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control type" placeholder="请输入软件型号" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">软件名称</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control name"  placeholder="请输入软件名称" />
+                            </div>
+                        </div>  
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">软件版本</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control version"  placeholder="请输入软件版本" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 form-label">厂商</label>
+                            <div class="col-sm-9 input-box">
+                                <input type="text" class="form-control vendor" placeholder="请输入厂商" />
+                            </div>
+                        </div>   
+                    </div>
+                    <div style="display: flex">
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 form-label">用途</label>
+                            <div class="col-sm-9 input-box">
+                                <textarea class="form-control usage"  placeholder="请输入用途"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="glyphicon glyphicon-minus-sign" style="line-height: 210px;cursor:pointer" onclick="delProcessName(this)"></i>
+            </div>`
+            $("#addStack").before(text)
+        }
+
+        // 新增应用启动进程名称
+        function addProcessName() {
+            const text = `
+                <div>
+                  <input type="text" class="processName" placeholder="请输入" />
+                  <i class="glyphicon glyphicon-minus-sign" onclick="delProcessName(this)"></i>
+                </div>`;
+            $("#addProcessName").before(text);
+           
+        }
+
+        function delProcessName(e) {
+            $(e).parent().remove();
+        }
+
+        // 选择是否完成测试
+        $('#finishTest').change(function () {
+            if ($(this)[0].value) {
+                $('#comTest1').attr("style", "display: none");
+                $('#comTest2').attr("style", "display: flex");
+            } else {
+                $('#comTest2').attr("style", "display: none");
+                $('#comTest1').attr("style", "display: flex");
+            }
+        })
+
+        // 公司LOGO
+        let companyLogo = '';
+        let logoFileName = '';
+        $('#companyLogo').change(function() {
+            logoFileName = $(this)[0].files[0].name;
+            const reader = new FileReader();
+                reader.readAsDataURL($(this)[0].files[0])
+                reader.onload = function() {
+                    companyLogo = reader.result
+                    $('#logoImg').attr("src",this.result);
+                }
+           
+        })
+
+         // 产品逻辑架构图
+         let projectLogicalDiagram = '';
+        let logicalDiagramFileName = ''
+        $('#projectLogicalDiagram').change(function() {
+            logicalDiagramFileName = $(this)[0].files[0].name;
+            const reader = new FileReader();
+            reader.readAsDataURL($(this)[0].files[0])
+            reader.onload = function() {
+                projectLogicalDiagram = reader.result;
+                $('#diagramImg').attr("src", this.result);
+            }
+            
+        })
+
+        // 测试组网图
+        let testNetworkDiagram = '';
+        let networkDiagramFileName = ''
+        $('#testNetworkDiagram').change(function() {
+            networkDiagramFileName = $(this)[0].files[0].name;
+            const reader = new FileReader();
+            reader.readAsDataURL($(this)[0].files[0])
+            reader.onload = function() {
+                testNetworkDiagram = reader.result;
+                $('#testNetworkImg').attr('src',this.result)
+            }
+            
+        })
+
+
+        // 功能测试文档
+        let functionUrl = [];
+        $('#functionUrl').change(function() {
+            console.log($(this)[0].files[0]);
+            let params = new FormData();
+            params.append('fileName',$(this)[0].files[0].name);
+            params.append('file', $(this)[0].files[0])
+            console.log(params); 
+            $.ajax({
+                type: 'POST',
+                data: JSON.stringify(params),
+                url: baseUrl + '/rest/v1/common/upload-file',
+                async: false,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    console.log(res);
+                }
+            })
+        })
+
+        // 结果日志
+        let resultUrl = [];
+        $('#resultUrl').change(function() {
+            let param = {
+                fileName: $(this)[0].files[0].name,
+                file: $(this)[0].files[0]
+            }
+            $.ajax({
+                type: 'POST',
+                data: JSON.stringify(param),
+                url: baseUrl + '/rest/v1/common/upload-file',
+                async: false,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    console.log(res);
+                }
+            })
+        })
+
+        // 安装包
+        let packageUrl = [];
+        $('#packageUrl').change(function() {
+            let param = {
+                fileName: $(this)[0].files[0].name,
+                file: $(this)[0].files[0]
+            }
+            $.ajax({
+                type: 'POST',
+                data: JSON.stringify(param),
+                url: baseUrl + '/rest/v1/common/upload-file',
+                async: false,
+                contentType: false,
+                processData: false,
+                success: function (res) {
+                    console.log(res);
+                },
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("access-control-allow-headers", "X-Request-With,KP-TOKEN,timestamp,Referer");
+                }
+            })
+        })
+
+        function handleSubmit() {
+            // 应用启动进程名称
+            let processName = [];
+            let processList =  $('.processName');
+            for(let i = 0; i < processList.length; ++i) {
+                processName.push(processList[i].value);
+            }
+
+            // 软件栈
+            let productDependency = [];
+            let dependencyLength = $('.type').length
+            let typeArr = $('.type');
+            let nameArr = $('.name');
+            let versionArr = $('.version');
+            let vendorArr = $('.vendor');
+            let usageArr = $('.usage');
+            for(let i = 0; i < dependencyLength; ++i) {
+                let obj = {
+                    type: typeArr[i].value,
+                    name: nameArr[i].value,
+                    version: versionArr[i].value,
+                    vendor: vendorArr[i].value,
+                    usage: usageArr[i].value
+                }
+                productDependency.push(obj)
+            }
+
+            // 请求参数
+            let params = {
+                projectId: $('#projectId')[0].value,
+                requestId: $('#requestId')[0].value,
+                solutionName: $('#solutionName')[0].value,
+                testOrganization: $('#testOrganization')[0].value,
+                companyName: $('#companyName')[0].value,
+                companyLogo: companyLogo,
+                logoFileName: logoFileName,
+                userId: $('#userId')[0].value,
+                userName: $('#userName')[0].value,
+                telephone: $('#telephone')[0].value,
+                email: $('#email')[0].value,
+                projectDescription: $('#projectDescription')[0].value,
+                projectLogicalDiagram: projectLogicalDiagram,
+                logicalDiagramFileName: logicalDiagramFileName,
+                testNetworkDiagram: testNetworkDiagram,
+                networkDiagramFileName: networkDiagramFileName,
+                productName: $('#productName')[0].value,
+                productNameEn: $('#productNameEn')[0].value,
+                productVersion: $('#productVersion')[0].value,
+                productType: $('#productType')[0].value,
+                productAttribute: $('#productAttribute')[0].value,
+                downloadUrl: $('#downloadUrl')[0].value,
+                openSource: $('#openSource')[0].value,
+                protocol: $('#protocol')[0].value,
+                language: $('#language')[0].value,
+                finishTest: $('#finishTest')[0].value,
+                vm: $('#vm')[0].value,
+                platform: $('#platform')[0].value,
+                serverType: $('#serverType')[0].value,
+                modelType: $('#modelType')[0].value,
+                cpu: $('#cpu')[0].value,
+                ram: $('#ram')[0].value,
+                disk: $('#disk')[0].value,
+                nic: $('#nic')[0].value,
+                osName: $('#osName')[0].value,
+                osVersion: $('#osVersion')[0].value,
+                productDependency: productDependency,
+                processName: processName,
+                functionUrl: functionUrl,
+                checksum: $('#checksum')[0].value,
+                packageUrl: packageUrl,
+                resultUrl: resultUrl,
+            }
+            console.log(params);
+            $.ajax({
+                type: 'POST',
+                data: JSON.stringify(params),
+                dataType: 'json',
+                url: baseUrl + '/rest/v1/softwareTest/set-test',
+                async: false,
+                contentType: 'application/json;charset=utf-8',
+                processData: false,
+                success: function (res) {
+                    console.log(res);
+                },
+            })
+        }
+    </script>
+</body>
+
+</html>
